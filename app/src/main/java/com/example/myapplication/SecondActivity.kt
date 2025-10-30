@@ -11,18 +11,17 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 
-class MainActivity : ComponentActivity() {
+class SecondActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        val textReceived = intent.getStringExtra("TEXT_KEY") ?: "секонд экран"
         setContent {
-            FirstScreen()
+            SecondScreen(textReceived)
         }
     }
 
     @Composable
-    fun FirstScreen() {
-        var textInput by remember { mutableStateOf("") }
-
+    fun SecondScreen(receivedText: String) {
         Column(
             modifier = Modifier
                 .fillMaxSize()
@@ -30,31 +29,24 @@ class MainActivity : ComponentActivity() {
             horizontalAlignment = Alignment.Start,
             verticalArrangement = Arrangement.Top
         ) {
-            TextField(
-                value = textInput,
-                onValueChange = { textInput = it },
-                label = { Text("vash text") },
-                modifier = Modifier.fillMaxWidth()
-            )
+            Text(text = receivedText, style = MaterialTheme.typography.headlineMedium)
             Spacer(modifier = Modifier.height(100.dp))
             Button(onClick = {
-                val intent = Intent(this@MainActivity, SecondActivity::class.java)
-                if (textInput.isNotEmpty()) {
-                    intent.putExtra("TEXT_KEY", textInput)
-                }
-                startActivity(intent)
-            }) {
-                Text("go to секонд экран")
-            }
-            Spacer(modifier = Modifier.height(10.dp))
-            Button(onClick = {
-                val intent = Intent(this@MainActivity, ThirdActivity::class.java)
-                if (textInput.isNotEmpty()) {
-                    intent.putExtra("TEXT_KEY", textInput)
+                val intent = Intent(this@SecondActivity, ThirdActivity::class.java)
+                val textToSend = this@SecondActivity.intent.getStringExtra("TEXT_KEY")
+                if (textToSend != null) {
+                    intent.putExtra("TEXT_KEY", textToSend)
                 }
                 startActivity(intent)
             }) {
                 Text("go to третий экран")
+            }
+            Spacer(modifier = Modifier.height(10.dp))
+            Button(onClick = {
+                val intent = Intent(this@SecondActivity, MainActivity::class.java)
+                startActivity(intent)
+            }) {
+                Text("на первый")
             }
         }
     }
