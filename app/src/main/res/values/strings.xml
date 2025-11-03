@@ -1,3 +1,32 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">Hellow</string>
+
+
+    <string name="email_label">Электронная почта</string>
+    <string name="password_label">Пароль</string>
+    <string name="login_button">Войти</string>
+    <string name="email_empty_error">Поле email не может быть пустым</string>
+    <string name="password_empty_error">Введите пароль</string>
+    <string name="email_invalid_error">Некорректный формат email</string>
+    <string name="password_short_error">Пароль должен быть хотя бы 8 символов</string>
+    <string name="show_password">Показать пароль</string>
+    <string name="hide_password">Скрыть пароль</string>
+
+
+    <string name="notes_title">Заметки пользователя:</string>
+    <string name="add_note_button">Добавить заметку</string>
+    <string name="no_notes">Заметок нет</string>
+    <string name="theme_label">Выберите тему:</string>
+    <string name="theme_default">По умолчанию</string>
+    <string name="theme_red">Красная</string>
+    <string name="theme_green">Зеленая</string>
+    <string name="theme_blue">Синяя</string>
+
+
+    <string name="add_note_title">Создание заметки</string>
+    <string name="note_title_label">Заголовок заметки</string>
+    <string name="note_content_label">Текст заметки</string>
+    <string name="save_button">Сохранить</string>
+    <string name="title_empty_error">Введите заголовок заметки</string>
+
 </resources>
