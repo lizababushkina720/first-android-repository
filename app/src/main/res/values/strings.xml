@@ -1,3 +1,57 @@
+
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">HW_03</string>
+
+    <string name="nav_settings">Настройки</string>
+    <string name="nav_edit">Редактирование</string>
+    <string name="nav_messages">Сообщения</string>
+
+    <string name="settings_title">Настройки уведомления</string>
+    <string name="settings_notification_title">Заголовок уведомления</string>
+    <string name="settings_notification_text">Текст уведомления</string>
+    <string name="settings_expandable">Раскрывающееся уведомление</string>
+    <string name="settings_priority">Приоритет уведомления</string>
+    <string name="settings_open_on_click">Открывать при нажатии</string>
+    <string name="settings_reply_action">Добавить ответ</string>
+    <string name="settings_send_notification">Отправить уведомление</string>
+    <string name="settings_title_error">Введите заголовок</string>
+
+    <string name="edit_title">Редактирование уведомления</string>
+    <string name="edit_notification_id">ID уведомления</string>
+    <string name="edit_new_text">Новый текст уведомления</string>
+    <string name="edit_update_button">Обновить уведомление</string>
+    <string name="edit_clear_all_button">Смахнуть все уведомления</string>
+    <string name="edit_success">Уведомление обновлено</string>
+    <string name="edit_not_found">Уведомление с таким ID нет</string>
+    <string name="edit_no_notifications">Нет активных уведомлений</string>
+    <string name="edit_invalid_id">Некорректный ID </string>
+    <string name="edit_all_cleared">Все уведомления удалены</string>
+
+    <string name="messages_title">Сообщения</string>
+    <string name="messages_input_hint">Введите сообщение</string>
+    <string name="messages_send_button">Отправить</string>
+
+    <string name="channel_default_name">Основной канал</string>
+    <string name="channel_default_description">Канал для основных уведомлений</string>
+
+    <string name="priority_min">Минимальный</string>
+    <string name="priority_low">Низкий</string>
+    <string name="priority_default">Средний</string>
+    <string name="priority_high">Высокий</string>
+
+    <string name="reply_action_label">Ответить</string>
+    <string name="reply_input_hint">Введите ответ...</string>
+
+    <string name="permission_granted">Разрешение на уведомления получено</string>
+    <string name="permission_denied">Разрешение на уведомления не получено</string>
+    <string name="permission_rationale">Разрешение необходимо для показа уведомлений</string>
+
+    <string name="notification_sent">Уведомление отправлено (ID: %1$d)</string>
+    <string name="notification_error_permission">Ошибка: нет разрешения на уведомления</string>
+
+    <string name="intent_title_format">Заголовок: %1$s</string>
+    <string name="intent_text_format">Текст: %1$s</string>
+
+    <string name="messages_clear_all">Очистить сообщения</string>
+
 </resources>
