@@ -1,3 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">HW_04</string>
+
+    <string name="coroutines_count_label">Количество корутин: %1$d</string>
+
+    <string name="dispatcher_label">Dispatcher:</string>
+    <string name="dispatcher_default">Default</string>
+    <string name="dispatcher_io">IO</string>
+    <string name="dispatcher_main">Main</string>
+    <string name="dispatcher_unknown">Unknown</string>
+    <string name="dispatcher_default_full">Dispatchers.Default</string>
+    <string name="dispatcher_io_full">Dispatchers.IO</string>
+    <string name="dispatcher_main_full">Dispatchers.Main</string>
+
+    <string name="sequential_label">Последовательно</string>
+    <string name="parallel_label">Параллельно</string>
+    <string name="lazy_label">Отложенный запуск</string>
+    <string name="background_label">Работа в бэкграунде</string>
+
+    <string name="button_start">Запустить</string>
+    <string name="button_cancel">Отменить</string>
+
+    <string name="progress_text">%1$d / %2$d</string>
+
+    <string name="msg_coroutines_cancelled">Отменено корутин: %1$d</string>
+    <string name="error_network">Network connection failed</string>
+    <string name="error_timeout">Operation took too long</string>
+    <string name="error_database">Database unavailable</string>
+    <string name="msg_coroutines_result">Успешно: %1$d, Ошибок: %2$d</string>
+
 </resources>
+
+
+
