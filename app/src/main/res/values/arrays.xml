@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="seed_pet_names_by_oldest">
+        <item>кабанчик</item>
+        <item>недорыбка</item>
+        <item>миту</item>
+        <item>недорыба</item>
+        <item>капибарин</item>
+        <item>недопеченька с предсказанием</item>
+        <item>капибарчик 1</item>
+        <item>капибарчик 2</item>
+        <item>капибарчик 3</item>
+        <item>картошка</item>
+        <item>капибар</item>
+        <item>большая недопеченька с предсказанием</item>
+    </string-array>
+
+    <string-array name="seed_pet_names">
+        <item>кабанчик</item>
+        <item>капибарчик 2</item>
+        <item>недопеченька с предсказанием</item>
+        <item>капибар</item>
+        <item>миту</item>
+        <item>капибарин</item>
+        <item>картошка</item>
+        <item>недорыбка</item>
+        <item>капибарчик 1</item>
+        <item>большая недопеченька с предсказанием</item>
+        <item>капибарчик 3</item>
+        <item>недорыба</item>
+    </string-array>
+
+    <string-array name="seed_pet_weights_by_oldest">
+        <item>7.8</item>
+        <item>0.9</item>
+        <item>2.6</item>
+        <item>1.1</item>
+        <item>12.4</item>
+        <item>3.3</item>
+        <item>9.1</item>
+        <item>9.2</item>
+        <item>9.3</item>
+        <item>4.7</item>
+        <item>10.8</item>
+        <item>15.6</item>
+    </string-array>
+
+    <string-array name="seed_pet_names_alpha">
+        <item>большая недопеченька с предсказанием</item>
+        <item>кабанчик</item>
+        <item>капибар</item>
+        <item>капибарин</item>
+        <item>капибарчик 1</item>
+        <item>капибарчик 2</item>
+        <item>капибарчик 3</item>
+        <item>картошка</item>
+        <item>миту</item>
+        <item>недопеченька с предсказанием</item>
+        <item>недорыба</item>
+        <item>недорыбка</item>
+    </string-array>
+
+</resources>

@@ -1,3 +1,124 @@
 <resources>
-    <string name="app_name">My Application</string>
+    <string name="app_name">HW_05</string>
+
+
+    <string name="auth_title">Вход</string>
+
+    <string name="field_email">Email</string>
+    <string name="field_password">Пароль</string>
+
+    <string name="auth_btn_sign_in">Войти</string>
+    <string name="auth_btn_sign_in_loading">Входим...</string>
+    <string name="auth_btn_register">Регистрация</string>
+    <string name="auth_btn_recovery">Восстановление</string>
+
+    <string name="snackbar_user_not_found">Пользователь не найден</string>
+    <string name="snackbar_bad_credentials">Неверный пароль</string>
+    <string name="snackbar_need_recovery">Аккаунт удалён. Восстановите его в течение 7 дней.</string>
+    <string name="snackbar_deleted_forever">Аккаунт удалён навсегда</string>
+
+    <string name="register_title">Регистрация</string>
+
+    <string name="field_name">Имя</string>
+    <string name="field_nickname">Никнейм</string>
+    <string name="field_repeat_password">Повторите пароль</string>
+
+    <string name="register_btn_create">Создать аккаунт</string>
+    <string name="register_btn_create_loading">Создаём...</string>
+
+    <string name="common_btn_back">Назад</string>
+
+    <string name="snackbar_passwords_not_match">Пароли не совпадают</string>
+    <string name="snackbar_user_exists">Пользователь с таким email уже существует</string>
+
+    <string name="recovery_title">Восстановление</string>
+    <string name="recovery_hint">Введите email. Если аккаунт удалён менее 7 дней назад — он восстановится.</string>
+    <string name="recovery_btn">Восстановить</string>
+    <string name="recovery_btn_loading">Восстанавливаем...</string>
+
+    <string name="snackbar_recovery_ok">Аккаунт восстановлен</string>
+    <string name="snackbar_recovery_not_deleted">Аккаунт не удалён</string>
+
+    <string name="profile_title">Профиль</string>
+    <string name="profile_btn_load">Загрузить профиль</string>
+    <string name="profile_btn_logout">Выйти</string>
+
+    <string name="profile_user_not_found">Пользователь не найден</string>
+    <string name="profile_user_format">Имя: %1$s\nНик: %2$s\nEmail: %3$s</string>
+
+    <string name="snackbar_not_logged_in">Сессия не найдена, войдите заново</string>
+
+    <string name="pets_title">Питомцы</string>
+    <string name="pets_btn_sort">Сортировка</string>
+    <string name="pets_btn_add">Добавить питомца</string>
+    <string name="pets_btn_profile">Профиль</string>
+    <string name="pets_empty">Питомцев пока нет</string>
+
+    <string name="pets_sort_current_format">Сортировка: %1$s</string>
+    <string name="pets_item_weight_format">Вес: %1$.2f кг</string>
+    <string name="pets_item_date_format">Добавлен: %1$s</string>
+
+    <string name="sort_title">Выберите сортировку</string>
+    <string name="sort_newest">По новизне</string>
+    <string name="sort_weight">По весу</string>
+    <string name="sort_alpha">По алфавиту</string>
+
+    <string name="add_pet_title">Добавить питомца</string>
+    <string name="add_pet_field_name">Имя питомца</string>
+    <string name="add_pet_field_weight">Вес (кг)</string>
+
+    <string name="add_pet_btn_save">Сохранить</string>
+    <string name="add_pet_btn_save_loading">Сохраняем...</string>
+
+    <string name="snackbar_add_pet_bad_input">Введите имя и корректный вес</string>
+    <string name="snackbar_add_pet_ok">Питомец добавлен</string>
+
+    <string name="error_required">Обязательное поле</string>
+    <string name="error_invalid_email">Неверный формат email</string>
+    <string name="error_password_short">Пароль минимум 4 символа</string>
+    <string name="error_passwords_mismatch">Пароли не совпадают</string>
+    <string name="error_nickname_invalid">Никнейм не может быть пустым</string>
+
+    <string name="snackbar_fix_errors">Исправьте ошибки в форме</string>
+    <string name="snackbar_register_failed">Ошибка регистрации</string>
+    <string name="cd_toggle_password_visibility">Показать/скрыть пароль</string>
+
+    <string name="snackbar_login_failed">Ошибка входа</string>
+
+    <string name="recovery_deleted_title">Аккаунт удалён</string>
+    <string name="recovery_deleted_body">Аккаунт был удалён. В течение 7 дней его можно восстановить или удалить окончательно.</string>
+
+    <string name="recovery_btn_restore">Восстановить аккаунт</string>
+    <string name="recovery_btn_delete_forever">Удалить окончательно</string>
+    <string name="recovery_btn_processing">Обрабатываем...</string>
+
+    <string name="snackbar_restore_ok">Аккаунт восстановлен</string>
+    <string name="snackbar_recovery_bad_id">Некорректный id аккаунта</string>
+    <string name="snackbar_recovery_failed">Ошибка восстановления</string>
+
+    <string name="snackbar_empty_fields">Заполните все поля</string>
+    <string name="snackbar_empty_email_password">Введите email и пароль</string>
+    <string name="snackbar_load_pets_failed">Не удалось загрузить питомцев</string>
+    <string name="snackbar_add_pet_failed">Не удалось сохранить питомца</string>
+    <string name="snackbar_profile_load_failed">Не удалось загрузить профиль</string>
+    <string name="snackbar_profile_delete_failed">Не удалось удалить профиль</string>
+    <string name="profile_btn_delete">Удалить аккаунт</string>
+    <string name="snackbar_register_ok">Аккаунт создан. Войдите</string>
+
+    <string name="register_ok_title">Аккаунт создан</string>
+    <string name="register_ok_body">Теперь войдите с email и паролем</string>
+    <string name="register_ok_btn_login">Войти</string>
+
+    <string name="add_pet_ok_title">Питомец добавлен</string>
+    <string name="add_pet_ok_body">Запись сохранена</string>
+    <string name="add_pet_ok_btn_to_list">К списку питомцев</string>
+
+    <string name="error_invalid_weight">Введите корректный вес</string>
+    <string name="search">Поиск по имени</string>
+    <string name="nothing_was_found">Ничего не найдено</string>
+
+
+
+
+
 </resources>

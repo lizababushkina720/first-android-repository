@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="screen_padding">16dp</dimen>
+    <dimen name="v_space_12">12dp</dimen>
+    <dimen name="btn_padding_vertical">12dp</dimen>
+    <dimen name="card_padding">12dp</dimen>
+    <dimen name="v_space_8">8dp</dimen>
+
+</resources>
