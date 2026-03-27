@@ -1,3 +1,52 @@
 <resources>
-    <string name="app_name">My Application</string>
+
+    <string name="app_name">Организации</string>
+    <string name="search_hint">Поиск по ИНН или названию...</string>
+    <string name="search">Найти</string>
+    <string name="no_results">Ничего не найдено</string>
+
+    <!-- Детали организации -->
+    <string name="detail_title">Детали организации</string>
+    <string name="inn">ИНН</string>
+    <string name="kpp">КПП</string>
+    <string name="ogrn">ОГРН</string>
+    <string name="address">Адрес</string>
+    <string name="management">Руководство</string>
+    <string name="status">Статус</string>
+    <string name="type">Тип</string>
+    <string name="back">Назад</string>
+
+
+    <!-- Карточка организации -->
+    <string name="inn_prefix">ИНН: </string>
+    <string name="status_active">Действует</string>
+    <string name="status_liquidated">Ликвидирована</string>
+    <string name="legal_entity">Юр. лицо</string>
+    <string name="active">ACTIVE</string>
+
+
+    <string name="loading">Загрузка...</string>
+    <string name="error_title">Что-то пошло не так</string>
+    <string name="retry">Повторить</string>
+    <string name="source_server">Данные с сервера</string>
+    <string name="source_cache">Данные из кэша</string>
+
+    <string name="initial_search_message">Введите запрос для поиска организаций</string>
+    <string name="clear">Очистить</string>
+
+    <string name="data_from_server">Данные с сервера</string>
+    <string name="data_from_cache">Данные из кэша</string>
+    <string name="error_loading">Произошла ошибка при загрузке данных</string>
+
+    <string name="unknown_error">Неизвестная ошибка</string>
+    <!-- Иконки для экрана деталей -->
+    <string name="icon_address">📍</string>
+    <string name="icon_inn">🔢</string>
+    <string name="icon_kpp">📋</string>
+    <string name="icon_ogrn">📄</string>
+
+
+
+
+
 </resources>
