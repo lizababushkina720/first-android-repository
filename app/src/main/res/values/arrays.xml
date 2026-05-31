@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer-array name="organization_chart_values">
+        <item>70</item>
+        <item>59</item>
+        <item>81</item>
+        <item>78</item>
+        <item>86</item>
+    </integer-array>
+</resources>
