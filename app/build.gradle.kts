@@ -1,65 +1,63 @@
+import groovy.json.JsonSlurper
+
 plugins {
-    alias(libs.plugins.android.application)
-    alias(libs.plugins.kotlin.android)
-    alias(libs.plugins.kotlin.compose)
+    alias(libs.plugins.app.android.application)
+    alias(libs.plugins.app.compose)
+    alias(libs.plugins.app.hilt)
+    alias(libs.plugins.gms.google.services)
+    alias(libs.plugins.firebase.crashlytics.plugin)
 }
 
 android {
-    namespace = "com.example.myapplication"
+    namespace = "com.example.hw_01_sem2"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.example.myapplication"
-        minSdk = 24
-        targetSdk = 36
+        applicationId = "com.example.hw_01_sem2"
         versionCode = 1
         versionName = "1.0"
 
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
-    buildTypes {
-        release {
-            isMinifyEnabled = false
-            proguardFiles(
-                getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
-            )
-        }
-    }
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_11
-        targetCompatibility = JavaVersion.VERSION_11
-    }
-    kotlinOptions {
-        jvmTarget = "11"
-    }
     buildFeatures {
-        compose = true
+        buildConfig = true
     }
 }
 
+
 dependencies {
+    implementation(project(path = ":core:analytics:api"))
+    implementation(project(path = ":core:analytics:impl"))
+    implementation(project(path=":core:data"))
+    implementation(project(path=":core:domain"))
+    implementation(project(path=":core:data"))
+    implementation(project(path=":core:build-config:api"))
+    implementation(project(path=":core:network"))
+    implementation(project(path=":core:build-config:impl"))
+    implementation(project(path=":core:di"))
 
     implementation(libs.androidx.core.ktx)
-    implementation(libs.androidx.lifecycle.runtime.ktx)
-    implementation(libs.androidx.activity.compose)
-    implementation(platform(libs.androidx.compose.bom))
-    implementation(libs.androidx.compose.ui)
-    implementation(libs.androidx.compose.ui.graphics)
-    implementation(libs.androidx.compose.ui.tooling.preview)
-    implementation(libs.androidx.compose.material3)
+    implementation(libs.androidx.appcompat)
+    implementation(libs.material)
+    implementation(libs.x.lifecycle.runtime.ktx)
+    implementation(libs.x.activity.compose)
+    implementation(libs.compose.navigation)
+    implementation(libs.kotlinx.serialization.json)
+    implementation(libs.hilt.navigation.compose)
+
+    implementation(libs.firebase.cloud.messaging)
+    implementation(libs.firebase.analytics)
+    implementation(libs.firebase.crashlytics)
+    implementation(libs.firebase.remote.config)
+
+    implementation("androidx.compose.material:material-icons-extended:1.7.0")
+    implementation("androidx.compose.material:material:1.7.0")
+
+    implementation("com.google.code.gson:gson:2.11.0")
+    implementation(platform("com.google.firebase:firebase-bom:34.13.0"))
+    implementation("com.google.firebase:firebase-analytics")
+
     testImplementation(libs.junit)
-    androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
-    androidTestImplementation(platform(libs.androidx.compose.bom))
-    androidTestImplementation(libs.androidx.compose.ui.test.junit4)
-    debugImplementation(libs.androidx.compose.ui.tooling)
-    debugImplementation(libs.androidx.compose.ui.test.manifest)
-    implementation("androidx.activity:activity-compose:1.9.2")
-    implementation(platform("androidx.compose:compose-bom:2024.09.03"))
-    implementation("androidx.compose.ui:ui")
-    implementation("androidx.compose.ui:ui-graphics")
-    implementation("androidx.compose.ui:ui-tooling-preview")
-    implementation("androidx.compose.material3:material3")
+    testImplementation(libs.mockk)
+    testImplementation(libs.kotlinx.coroutines.test)
 }

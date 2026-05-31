@@ -1,4 +1,5 @@
 pluginManagement {
+    includeBuild("convention-plugins")
     repositories {
         google {
             content {
@@ -11,6 +12,7 @@ pluginManagement {
         gradlePluginPortal()
     }
 }
+
 dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
     repositories {
@@ -19,5 +21,14 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "My Application"
+rootProject.name = "HW_01_sem2"
 include(":app")
+include(":core:network")
+include(":core:domain")
+include(":core:data")
+include(":core:di")
+include(":core:build-config:api")
+include(":core:build-config:impl")
+include(":core:analytics")
+include(":core:analytics:api")
+include(":core:analytics:impl")
