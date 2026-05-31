@@ -1,0 +1,12 @@
+plugins {
+    alias(libs.plugins.app.android.library)
+}
+
+android {
+    namespace = "com.example.buildconfig.api"
+
+}
+
+dependencies {
+
+}
